@@ -1,0 +1,31 @@
+<%- include("partials/header") %>
+<h1 style="color:white;margin:10 auto;text-align:center;">
+		Invitation From <%= i.usern %>
+	</h1>
+<div class="inviten" style="
+	margin: 100 auto;
+	text-align: center;
+	width: 500px;
+	height: 550px;
+	border: 2px solid purple;
+	background: pink;">
+	
+ 	<img src="<%= i.url %>" style="width:600px;height:600px">
+	<img src="<%= i.image %>" style="position:relative;left:<%= i.imgx%>px;top:-<%= i.imgy%>px;width:200px;height:200px">
+	<h1 style="position:relative;left:200;top:-500;width: 300px;font:<%= i.style%>;">
+		<%= i.content%>
+	</h1>
+	<form method="post" action="/invite/accept/<%= i._id%>/<%= user.username %>" >
+		<input type="text" name="add" placeholder="no.f ppl">
+		<input type="text" name="food" placeholder="food preferences if any">
+		<button>
+		Accept
+		</button>
+	</form>
+	<form method="post" action="/invite/reject/<%= i._id%>/<%= user.username %>">
+		<button>
+		Decline
+		</button>
+	</form>
+ </div>
+<%- include("partials/footer") %>

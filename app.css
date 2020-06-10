@@ -1,0 +1,74 @@
+hr.gradient_one {
+    border: 0;
+    height: 1px;
+    background: #63C;
+    background-image: -webkit-linear-gradient(left, #C9F, #63C, #C9F);
+    background-image: -moz-linear-gradient(left, #C9F, #63C, #C9F);
+    background-image: -ms-linear-gradient(left, #C9F, #63C, #C9F);
+    background-image: -o-linear-gradient(left, #C9F, #63C, #C9F);
+}
+.inviten{
+	margin: 100 auto;
+	text-align: center;
+	width: 500px;
+	height: 700px;
+	border: 2px solid purple;
+	background: pink;
+}
+img{
+	width: 500px;
+	height: 500px;
+}
+.radio{
+	display: inline;
+	float: left;
+}
+.event{
+	width:220px;
+	text-align:center;
+	margin:0 0 0 0; 
+	border:1px solid black;
+	background:grey;
+}
+.invt{
+	width:220px;
+	text-align:center;
+	margin: 20 auto; 
+	border:1px solid black;
+	background:grey;
+	display: inline;
+}
+
+.eventh{
+	width:220px;
+	margin: 20px 0 0 20px ;
+	background: black;
+	color: white;
+}
+.none{
+	display: none;
+}
+.eventd{
+	width:220px;
+	text-align:center;
+	margin: ; 0 0 0 0
+	border:1px solid black;
+	background:grey;
+}
+.intd{
+	width:220px;
+	text-align:center;
+	margin: ; 0 0 0 0
+	border:1px solid black;
+	background:grey;
+}
+.invtd{
+	width:220px;
+	text-align:center;
+	margin: ; 0 0 0 0
+	border:1px solid black;
+	background:grey;
+}
+.events{
+	display : inline;
+}
