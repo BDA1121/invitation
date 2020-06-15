@@ -277,7 +277,7 @@ app.post("/event/:id",function(req,res){
 		i.save();
 		i.Name.forEach(function(err,u){
 			Usr.find({username : u},function(us){
-		var mailOptions = {
+		/*var mailOptions = {
   from: 'dhanushted@gmail.com',
   to: us.email,
   subject: 'Sending Email using Node.js',
@@ -290,7 +290,7 @@ transporter.sendMail(mailOptions, function(error, info){
   } else {
     console.log('Email sent: ' + info.response);
   }
-});		
+});		*/
 			})
 		})
 	var newevent = { Name: name , Date : date, id : id };
@@ -327,11 +327,11 @@ app.get("/invites/new/:id",islogin,function(req,res){
 			res.redirect("/home");
 		}
 		else{
-			inv.forEach(function(i){
+			/*inv.forEach(function(i){
 				if(i.dead = date ){
 					Invite.deleteMany({dead: date});
 				}
-			})
+			})*/
 		console.log(inv.Name);
 	res.render("invite",{user : req.user ,i : inv });}
 	})
