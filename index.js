@@ -14,7 +14,7 @@ var express               = require("express"),
 	helpers = require('./helpers'),
 	LocalStrategy         = require("passport-local"),
 	passportLocalMongoose = require("passport-local-mongoose");
-var mongoDB = ("mongodb+srv://dhanush:waffles@cluster0-qsgh3.mongodb.net/test?retryWrites=true&w=majority");
+var mongoDB = ("mongodb+srv://dhanush:gNFCHKrIQ8ZshwD2@cluster0-qsgh3.mongodb.net/test?retryWrites=true&w=majority");
  mongoose.set('useUnifiedTopology', true);
  mongoose.connect(mongoDB, { useNewUrlParser: true });
 var app = express();
